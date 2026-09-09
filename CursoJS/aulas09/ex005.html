@@ -23,16 +23,24 @@
     <div id="msg">
         Clique em mim
     </div>
+    <br>
 
     <script>
+        //Seletor por tag
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write("Resultado = " + p1.innerText)
 
-        /*var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write("Resultado = " + p1.innerText) */
+        //Seletor por tag - direto
+        var corpo = window.document.body
+        corpo.style.background = 'gray'
 
+        //Seletor por ID
         var d = document.getElementById('msg')
-        d.style.color='red'
+        d.style.color='blue'
 
-        
+        //Seletor por querySelector "seleciona qualquer elemento"
+        var d = document.querySelector('div#msg')
+        d.style.color= 'green'
         
         
 
