@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        #caixa{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <p>Interaja..</p>
+    </div>
+
+    <script>
+        var caixa = document.querySelector('div#caixa')
+        addEventListener=('click', clicar)
+        addEventListener=('mouseenter', entrar)
+        addEventListener=('mouseout', sair)
+        
+        function clicar() {
+            caixa.style.background = 'blue'
+        }
+        function entrar(){
+            caixa.innerText = 'Entrou'
+            caixa.style.background = 'green'
+        }
+        function sair(){
+            caixa.innerHTML='Saiu'
+            caixa.style.background = 'red'
+        }
+
+    </script>
+</body>
+</html>
