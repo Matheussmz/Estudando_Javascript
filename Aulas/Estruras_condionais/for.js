@@ -6,6 +6,8 @@ const prompt = rl.createInterface({
     output: process.stdout,
 });
 
+// for (inicialização, condição, execução){}
+
 /*prompt.question("qual tabuada vc quer saber? ", resposta => {
     const number = Number.parseInt(resposta)
 
@@ -20,8 +22,10 @@ const prompt = rl.createInterface({
     }
 })
 */
-console.log("Lançamento do foquete !!")
-lan = 0
-for(let i = 1; i <= 10; i++){
-    console.log(lan)
+// teste de lançamento
+
+console.log("Lançamento em ")
+
+for(let i = 10; i >= 1; i--){
+    console.log(i)
 }
