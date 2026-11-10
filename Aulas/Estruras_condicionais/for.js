@@ -19,9 +19,16 @@ for(let i = 1; i <= 10; i++){
 
 //teste de par
 
-for(let i = 1; i <= 20; i++){
+/*for(let i = 1; i <= 20; i++){
     if(i % 2 === 0){
         console.log(`O numero ${i} é par`)
     }
     
+}*/
+
+
+for(let i = 1; i <= 15; i++){
+    if(i % 2 === 1){
+        console.log(`O numero ${i} e impa`)
+    }
 }
