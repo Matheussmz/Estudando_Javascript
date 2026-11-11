@@ -27,8 +27,29 @@ for(let i = 1; i <= 10; i++){
 }*/
 
 
-for(let i = 1; i <= 15; i++){
+/*for(let i = 1; i <= 15; i++){
     if(i % 2 === 1){
         console.log(`O numero ${i} e impa`)
     }
+}*/
+
+//for of
+
+/*let jogos = ["GTA5", "Pes 2016", "TWD", "FIFA"]
+
+for(let jogo of jogos){
+    console.log(`Jogando: ${jogo}`)
+}*/
+
+//For in
+
+let meusetup = {
+    marca : "lenovo",
+    modelo: "Thinkpad",
+    ram: "24GB",
+    ssd: "250GB"
+}
+
+for(let componente in meusetup){
+    console.log(`${componente} : ${meusetup[componente]}`)
 }
